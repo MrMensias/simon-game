@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="animate desktop">Press any key to start</h1>
+    <h1 class="animate mobile">Press the button to start</h1>
+    
+    <div class="board">
+        <div class="button 1" id="yellow" value="1"></div>
+        <div class="button 2" id="blue" name="2"></div>
+        <div class="button 3" id="red"></div>
+        <div class="button 4" id="green"></div>
+        <div class="logo"><h3>SIMON</h3></div>
+    </div>
+    <button class="mobile-start" onclick="startMobile()">Start Game</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

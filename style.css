@@ -1,0 +1,226 @@
+*{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg,#d2b812,#00a053);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    
+}
+
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 700px;
+    background-color: black;
+    height: 700px;
+    border-radius: 20px;
+    gap:30px;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+
+
+}
+
+.switch-holder{
+    position: absolute;
+    right: 30px;
+    display: flex;
+}
+
+.switch{
+    background-color: white;
+    border: 3px solid black;
+    width: 40px;
+    height: 20px;
+    
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.active-switch{
+    background-color: #26a8ff;
+    justify-content: flex-end;
+
+}
+
+.circle{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.desktop{
+    color: white;
+    font-size: 4.5rem;
+    margin: 20px;
+}
+
+.animate{
+    animation: titilate 2s infinite;
+}
+
+.button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0.7;
+
+}
+
+.button:active{
+    opacity: 1;
+}
+.pressed{
+    opacity: 1;
+}
+
+
+.logo{
+    position: absolute;
+    top:45%;
+    left: 35%;
+    background-color: black;
+    color: white;
+    width: 30%;
+    height: 10%;
+    text-align: center;
+    font-size: 2.5rem;
+    border-radius: 20px;
+}
+
+h3{
+    margin: 4.5%;
+}
+
+
+.mobile-start{
+    width: 35vh;
+    height: 60px;
+    font-size: 1.7rem;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 10% 0;
+    display:none;
+
+}
+.mobile-start:active{
+    background-color: white;
+    color: black;
+}
+
+.mobile{
+    display: none;
+    color: white;
+    font-size: 3.5rem;
+    margin: 20px;
+}
+
+#yellow{
+    background-color: #EBCE17;
+}
+
+#green{
+    background-color: #00EB78;
+}
+
+#blue{
+    background-color: #2709EB;
+}
+
+#red{
+    background-color: #EB260C;
+}
+
+@keyframes titilate {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .board{
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        gap: 15px;
+        padding: 15px;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:600px) {
+    .board{
+        width: 350px;
+        height: 350px;
+    }
+    .logo{
+        font-size: 1.3rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .mobile-start{
+        display: block;
+    }
+}
+
+@media (max-width:400px) {
+    .board{
+        width: 250px;
+        height: 250px;
+    }
+    .logo{
+        font-size: 1rem;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        font-size: 2rem;
+    }
+    .mobile-start{
+        display: block;
+
+    }
+}
+
